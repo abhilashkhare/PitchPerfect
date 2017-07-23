@@ -149,10 +149,6 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nv4-ay-gqJ" userLabel="Stop Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="150.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="64" id="k2n-Fj-W9T"/>
-                                                    <constraint firstAttribute="height" constant="64" id="rjt-VW-I8H"/>
-                                                </constraints>
                                                 <state key="normal" image="Stop"/>
                                                 <connections>
                                                     <action selector="stopButtonPressed:" destination="Hc1-pt-lkl" eventType="touchUpInside" id="m8T-qk-m8H"/>
@@ -172,6 +168,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="chipmunkButton" destination="onY-zu-LhT" id="T3d-vd-iIg"/>
                         <outlet property="echoButton" destination="54e-YF-QcR" id="Bez-TK-CF6"/>
                         <outlet property="rabbitButton" destination="eUF-HC-whS" id="KtD-yZ-aNW"/>
                         <outlet property="reverbButton" destination="zyr-jX-okO" id="g30-Kz-rRn"/>
