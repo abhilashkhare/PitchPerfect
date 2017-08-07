@@ -1,5 +1,5 @@
 //
-//  PlaySoundsViewController+Audio.swift
+//  PlaySoundViewController+Audio.swift
 //  PitchPerfect
 //
 //  Copyright © 2016 Udacity. All rights reserved.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-// MARK: - PlaySoundsViewController: AVAudioPlayerDelegate
+// MARK: - PlaySoundViewController: AVAudioPlayerDelegate
 
 extension PlaySoundViewController: AVAudioPlayerDelegate {
     
@@ -99,7 +99,7 @@ extension PlaySoundViewController: AVAudioPlayerDelegate {
             }
             
             // schedule a stop timer for when audio finishes playing
-            self.stopTimer = Timer(timeInterval: delayInSeconds, target: self, selector: #selector(PlaySoundsViewController.stopAudio), userInfo: nil, repeats: false)
+            self.stopTimer = Timer(timeInterval: delayInSeconds, target: self, selector: #selector(PlaySoundViewController.stopAudio), userInfo: nil, repeats: false)
             RunLoop.main.add(self.stopTimer!, forMode: RunLoopMode.defaultRunLoopMode)
         }
         
