@@ -59,7 +59,7 @@ class PlaySoundViewController: UIViewController {
         echoButton.imageView?.contentMode = .scaleAspectFit
         reverbButton.imageView?.contentMode = .scaleAspectFit
         stopButton.imageView?.contentMode = .scaleAspectFit
-
+        setupAudio()
         // Do any additional setup after loading the view.
     }
 
