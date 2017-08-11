@@ -72,6 +72,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate  {
         } else
         {
             print("recording was not successful")
+            let alertController = UIAlertController(title: "Recording Not Successful", message: "Record again", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Close",style: UIAlertActionStyle.default, handler : nil))
+            self.present(alertController,animated:  true,completion: nil)
+            
+            
         }
        
     }
